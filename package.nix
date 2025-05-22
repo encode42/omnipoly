@@ -23,6 +23,5 @@ buildNpmPackage rec {
     changelog = "https://github.com/kWeglinski/OmniPoly/blob/${src.tag}/CHANGELOG.md";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ encode42 ];
-    mainPrograms = "sth-libretranslate";
   };
 }
