@@ -17,6 +17,12 @@ buildNpmPackage rec {
 
   npmDepsHash = "sha256-uuKEsTqQGt0wl/c9zz7cuN5VRI6AJ0hOK7v9UgiZQDw=";
 
+  installPhase = ''
+    mkdir -p $out
+
+    cp -r . $out/
+  '';
+
   meta = {
     description = "Frontend for LanguageTool and LibreTranslate";
     homepage = "https://github.com/kWeglinski/OmniPoly";
